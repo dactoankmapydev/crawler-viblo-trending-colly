@@ -9,8 +9,8 @@ import (
 )
 
 type Data struct {
-	Title string `json:"title"`
-	Link string `json:link`
+	Title string 
+	Link string 
 }
 
 func main() {
@@ -47,5 +47,4 @@ func main() {
 		fullURL := fmt.Sprintf("https://viblo.asia/trending?page=%d", i)
 		c.Visit(fullURL)
 	}
-	c.Wait()
 }
